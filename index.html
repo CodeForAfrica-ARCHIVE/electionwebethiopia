@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2015 Ethiopian National Election</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="election-web.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="splash">
+    <svg viewport="0 0 200 200">
+        <g id="spl" transform="translate(100,100)">
+            <path id="progback" d="M0,95A95,95 0 1,1 0,-95A95,95 0 1,1 0,95M0,50A50,50 0 1,0 0,-50A50,50 0 1,0 0,50Z"></path>
+            <path id="progbar"></path>
+            <text id="progtext" style="text-anchor: middle;" dy="0.35em">0%</text>
+        </g>
+    </svg>
+    </div>
+    <div id="wrapper" style="display: none;">
+    <div class="header">
+    <div class="heading" style="opacity:0;">2015 Ethiopian National Election</div>
+    <div class="hint" style="opacity:0;">Click on the map to start browsing.</div>
+    </div>
+
+    <div id="content">
+    <div id="map">
+        <div id="resetdiv"><a id="zoomout" href="#N,ETH" style="display:none">Zoom out</a></div>
+        <div id="hovertext"><span id="hovername"></span></div>
+        <svg>
+            <g id="map">
+                <g id="areas"></g>
+                <g id="selph"></g>
+                <g id="hoverph"></g>
+                <g id="borders"></g>
+            </g>
+        </svg>
+    </div>
+    <div id="midlink">
+        <a href="#P,ETH" id="switchlink">View provincial legislature results</a>
+    </div>
+    <div id="piechart">
+        <svg>
+            <g id="chart">
+                <g id="slices"></g>
+                <g id="labels"></g>
+            </g>
+        </svg>
+    </div>
+    <div id="regstuff">
+    <table class="regstats fadetable" style="opacity:0;">
+    <tr><td>Registered voters:</td><td class="numbercell regdnum"></td></tr>
+    <tr><td>Votes cast:</td><td class="numbercell totalnum"></td></tr>
+    <tr><td>Turnout:</td><td class="numbercell turnout"></td></tr>
+    </table>
+    </div>
+    <div id="legend">
+        <table class="votes fadetable" style="opacity:0;">
+        <thead><tr class="voteheader">
+            <th colspan=2>Party</th>
+            <th class="numbercell">Votes</th>
+            <th class="numbercell">Vote %</th>
+        </tr></thead>
+        <tbody></tbody>
+        <tfoot>
+            <tr class="validrow">
+                <td colspan=2>Valid votes</td>
+                <td class="numbercell validnum"></td>
+                <td></td>
+            </tr>
+            <tr class="spoiltrow">
+                <td colspan=2>Spoilt votes</td>
+                <td class="numbercell spoiltnum"></td>
+                <td></td>
+            </tr>
+            <tr class="totalrow">
+                <td colspan=2>Total votes</td>
+                <td class="numbercell totalnum"></td>
+                <td></td>
+            </tr>
+        </tfoot>
+        </table>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <<script src="http://d3js.org/d3.v3.min.js" type="text/javascript"></script>
+    <script src="http://d3js.org/topojson.v1.min.js" type="text/javascript"></script>
+    <script src="http://d3js.org/queue.v1.min.js"></script>
+    <script src="election-web.js" type="text/javascript"></script>
+
+</body>
+</html>

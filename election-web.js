@@ -358,11 +358,11 @@ function updateAll(ballot, code, firsttime) {
                 tabsel.select(".votenum").text(function (d) { return intfmt(d.votes); });
                 tabsel.select(".voteperc").text(function (d) { return percfmt(d.votes/valid); });
 
-                d3.select(".validnum").text(intfmt(valid));
-                d3.select(".spoiltnum").text(intfmt(spoilt));
-                d3.selectAll(".totalnum").text(intfmt(valid + spoilt));
-                d3.select(".regdnum").text(intfmt(regd));
-                d3.select(".turnout").text(percfmt((valid + spoilt)/regd));
+                //d3.select(".validnum").text(intfmt(valid));
+               // d3.select(".spoiltnum").text(intfmt(spoilt));
+               // d3.selectAll(".totalnum").text(intfmt(valid + spoilt));
+               // d3.select(".regdnum").text(intfmt(regd));
+               // d3.select(".turnout").text(percfmt((valid + spoilt)/regd));
 
                 fadetables.transition().duration(transDuration/2)
                     .style("opacity", 1);
@@ -527,4 +527,3 @@ function unhovered(d) {
     d3.select("#hoverobj").remove();
     hovering = false;
 };
-

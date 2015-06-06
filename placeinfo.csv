@@ -1,16 +1,16 @@
 code,name,layer,parent,regd
-ETH,Ethiopia,0,,
-AA,Addis Ababa,1,ETH,
+ETH,Ethiopia,0,,20000000
+AA,Addis Ababa,1,ETH,1100777
 AF,Afar,1,ETH,
-AM,Amhara,1,ETH,
+AM,Amhara,1,ETH,6017247
 BG,Benshangul-Gumaz,1,ETH,
 DD,Dire Dawa,1,ETH,
 GP,Gambela People,1,ETH,
-HP,Harari People,1,ETH,
-OR,Oromia,1,ETH,
+HP,Harari People,1,ETH,3930
+OR,Oromia,1,ETH,4522447
 SO,Somali,1,ETH,
-SN,Southern Nations,1,ETH,
-TI,Tigray,1,ETH,
+SN,Southern Nations,1,ETH,2814885
+TI,Tigray,1,ETH,1365179
 AA1,Unknown AA,2,AA,
 AZ1,Zone 1,2,AA,
 AZ2,Zone 2,2,AA,

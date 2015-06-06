@@ -51,9 +51,9 @@ div#midlink { text-align: center; }
 .prov-border, .dist-border, .muni-border { fill: none; stroke: white; stroke-linejoin: round; stroke-linecap:round; }
 
 .province, .district, .muni { fill: gray; stroke: none; }
-.winner-ANC { fill: #66c2a5; }
-.winner-DA { fill: #8da0cb; }
-.winner-IFP { fill: #fc8d62; }
+.winner-EPRDF { fill: #66c2a5; }
+/*.winner-DA { fill: #8da0cb; }*/
+/*.winner-IFP { fill: #fc8d62; }*/
 .nation { display: none; fill: none; stroke: none; }
 
 #hoverobj { fill: white; stroke:none; fill-opacity: 0.5; pointer-events: none; }
@@ -77,9 +77,9 @@ table.votes tfoot tr:first-child td, table.votes tbody tr:first-child td { borde
 table.votes tbody tr:nth-child(odd) { background-color: lightgray; }
 table.votes tbody tr:nth-child(even) { background-color: white; }
 
-table.votes tbody tr.row-ANC { background-color: #93d3bf; }
-table.votes tbody tr.row-DA { background-color: #aebbd9; }
-table.votes tbody tr.row-IFP { background-color: #fcae90; }
+table.votes tbody tr.row-EPRDF { background-color: #93d3bf; }
+/*table.votes tbody tr.row-DA { background-color: #aebbd9; }*/
+/*table.votes tbody tr.row-IFP { background-color: #fcae90; }*/
 table.votes tbody tr.row-COPE { background-color: #fee36c; }
 
 table.votes td.partylogo { text-align: center; padding-right: 2px; }
@@ -90,9 +90,9 @@ table.votes tr.totalrow td { font-weight:bold; font-style: italic; }
 
 /* Pie chart formatting */
 .slice { stroke: white; fill: lightgray; }
-.slice.ANC { fill: #93d3bf; }
-.slice.DA { fill: #aebbd9; }
-.slice.IFP { fill: #fcae90; }
+.slice.EPRDF { fill: #93d3bf; }
+/*.slice.DA { fill: #aebbd9; }*/
+/*.slice.IFP { fill: #fcae90; }*/
 .slice.COPE { fill: #fee36c; }
 
 .pielabel { fill: black; stroke: none; }
